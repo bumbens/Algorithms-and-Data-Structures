@@ -1,8 +1,6 @@
+package UnionFind;
 import java.util.Scanner;
 
-/**
- * Exercises
- */
 public class QuickFind {
 
     public static int[] union(int[] id, int p, int q) {
@@ -54,3 +52,42 @@ public class QuickFind {
         System.out.println(find(id, 6));
     }
 }
+
+/*
+INPUT FORMAT: N, then pairs of integers (p q) 
+
+SAMPLE INPUT:
+************************
+
+10
+9 0
+3 4
+5 8
+7 2
+2 1
+5 7
+0 3
+4 2
+
+id[] after all unions: 1 1 1 1 1 1 6 1 1 1
+find(id, 6) returns: 6
+
+************************
+
+10
+4 3
+3 8
+6 5
+9 4
+2 1
+8 9
+5 0
+7 2
+6 1
+1 0
+6 7
+
+id[] after all unions: 1 1 1 8 8 1 1 1 8 8
+find(id, 6) returns: 1
+
+*/

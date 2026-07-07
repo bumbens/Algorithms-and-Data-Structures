@@ -1,8 +1,9 @@
+package UnionFind;
 import java.util.Scanner;
 
 
 public class DisjointSets {
-    Scanner scanner; 
+    
     private int[] parent;
     private int[] size;
 
@@ -11,7 +12,7 @@ public class DisjointSets {
         size = new int[n];
         for(int i = 0; i < n; i++){
             parent[i] = i;
-            size[i] = i;
+            size[i] = 1;
         }
     }
 
